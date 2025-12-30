@@ -1,0 +1,112 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<swiftScan-arm64-apple-macosx15.0-debug.module>"]
+  "swiftScan-arm64-apple-macosx15.0-debug.module": ["<swiftScan-arm64-apple-macosx15.0-debug.module>"]
+  "swiftScanPackageTests-arm64-apple-macosx15.0-debug.module": ["<swiftScanPackageTests-arm64-apple-macosx15.0-debug.module>"]
+  "swiftScanPackageTests-arm64-apple-macosx15.0-debug.test": ["<swiftScanPackageTests-arm64-apple-macosx15.0-debug.test>"]
+  "swiftScanTests-arm64-apple-macosx15.0-debug.module": ["<swiftScanTests-arm64-apple-macosx15.0-debug.module>"]
+  "test": ["<swiftScan-arm64-apple-macosx15.0-debug.module>","<swiftScanPackageTests-arm64-apple-macosx15.0-debug.test>","<swiftScanTests-arm64-apple-macosx15.0-debug.module>"]
+default: "main"
+nodes:
+  "/Users/anjun/Documents/GitHub/swiftScan/Sources/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/anjun/Documents/GitHub/swiftScan/Tests/swiftScanTests/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"]
+    outputs: ["/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+
+  "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/anjun/Documents/GitHub/swiftScan/Sources/LBXPermissions.swift","/Users/anjun/Documents/GitHub/swiftScan/Sources/LBXScanLineAnimation.swift","/Users/anjun/Documents/GitHub/swiftScan/Sources/LBXScanNetAnimation.swift","/Users/anjun/Documents/GitHub/swiftScan/Sources/LBXScanView.swift","/Users/anjun/Documents/GitHub/swiftScan/Sources/LBXScanViewController.swift","/Users/anjun/Documents/GitHub/swiftScan/Sources/LBXScanViewStyle.swift","/Users/anjun/Documents/GitHub/swiftScan/Sources/LBXScanWrapper.swift"]
+    outputs: ["/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/sources"]
+    description: "Write auxiliary file /Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/sources"
+
+  "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScanPackageTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScanPackageTests.derived/runner.swift"]
+    outputs: ["/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScanPackageTests.build/sources"]
+    description: "Write auxiliary file /Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScanPackageTests.build/sources"
+
+  "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScanPackageTests.derived/runner.swift":
+    tool: test-entry-point-tool
+    inputs: []
+    outputs: ["/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScanPackageTests.derived/runner.swift"]
+
+  "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScanPackageTests.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXPermissions.swift.o","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanLineAnimation.swift.o","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanNetAnimation.swift.o","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanView.swift.o","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanViewController.swift.o","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanViewStyle.swift.o","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanWrapper.swift.o","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScanPackageTests.build/runner.swift.o","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScanTests.build/swiftScanTests.swift.o"]
+    outputs: ["/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScanPackageTests.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScanPackageTests.product/Objects.LinkFileList"
+
+  "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScanTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/anjun/Documents/GitHub/swiftScan/Tests/swiftScanTests/swiftScanTests.swift"]
+    outputs: ["/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScanTests.build/sources"]
+    description: "Write auxiliary file /Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScanTests.build/sources"
+
+  "<swiftScan-arm64-apple-macosx15.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXPermissions.swift.o","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanLineAnimation.swift.o","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanNetAnimation.swift.o","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanView.swift.o","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanViewController.swift.o","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanViewStyle.swift.o","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanWrapper.swift.o","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/Modules/swiftScan.swiftmodule"]
+    outputs: ["<swiftScan-arm64-apple-macosx15.0-debug.module>"]
+
+  "<swiftScanPackageTests-arm64-apple-macosx15.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScanPackageTests.build/runner.swift.o","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/Modules/swiftScanPackageTests.swiftmodule"]
+    outputs: ["<swiftScanPackageTests-arm64-apple-macosx15.0-debug.module>"]
+
+  "<swiftScanPackageTests-arm64-apple-macosx15.0-debug.test>":
+    tool: phony
+    inputs: ["/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScanPackageTests.xctest/Contents/MacOS/swiftScanPackageTests"]
+    outputs: ["<swiftScanPackageTests-arm64-apple-macosx15.0-debug.test>"]
+
+  "<swiftScanTests-arm64-apple-macosx15.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScanTests.build/swiftScanTests.swift.o","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/Modules/swiftScanTests.swiftmodule"]
+    outputs: ["<swiftScanTests-arm64-apple-macosx15.0-debug.module>"]
+
+  "C.swiftScan-arm64-apple-macosx15.0-debug.module":
+    tool: shell
+    inputs: ["/Users/anjun/Documents/GitHub/swiftScan/Sources/LBXPermissions.swift","/Users/anjun/Documents/GitHub/swiftScan/Sources/LBXScanLineAnimation.swift","/Users/anjun/Documents/GitHub/swiftScan/Sources/LBXScanNetAnimation.swift","/Users/anjun/Documents/GitHub/swiftScan/Sources/LBXScanView.swift","/Users/anjun/Documents/GitHub/swiftScan/Sources/LBXScanViewController.swift","/Users/anjun/Documents/GitHub/swiftScan/Sources/LBXScanViewStyle.swift","/Users/anjun/Documents/GitHub/swiftScan/Sources/LBXScanWrapper.swift","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/sources"]
+    outputs: ["/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXPermissions.swift.o","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanLineAnimation.swift.o","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanNetAnimation.swift.o","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanView.swift.o","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanViewController.swift.o","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanViewStyle.swift.o","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanWrapper.swift.o","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/Modules/swiftScan.swiftmodule"]
+    description: "Compiling Swift Module 'swiftScan' (7 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","swiftScan","-emit-dependencies","-emit-module","-emit-module-path","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/Modules/swiftScan.swiftmodule","-output-file-map","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/sources","-I","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx10.13","-enable-batch-mode","-index-store-path","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j10","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/swiftScan-Swift.h","-color-diagnostics","-swift-version","5","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","swiftscan"]
+
+  "C.swiftScanPackageTests-arm64-apple-macosx15.0-debug.module":
+    tool: shell
+    inputs: ["/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScanPackageTests.derived/runner.swift","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/Modules/swiftScanTests.swiftmodule","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScanPackageTests.build/sources"]
+    outputs: ["/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScanPackageTests.build/runner.swift.o","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/Modules/swiftScanPackageTests.swiftmodule"]
+    description: "Compiling Swift Module 'swiftScanPackageTests' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","swiftScanPackageTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/Modules/swiftScanPackageTests.swiftmodule","-output-file-map","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScanPackageTests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScanPackageTests.build/sources","-I","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx10.13","-enable-batch-mode","-index-store-path","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j10","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScanPackageTests.build/swiftScanPackageTests-Swift.h","-color-diagnostics","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","swiftscan"]
+
+  "C.swiftScanPackageTests-arm64-apple-macosx15.0-debug.test":
+    tool: shell
+    inputs: ["/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXPermissions.swift.o","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanLineAnimation.swift.o","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanNetAnimation.swift.o","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanView.swift.o","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanViewController.swift.o","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanViewStyle.swift.o","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanWrapper.swift.o","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScanPackageTests.build/runner.swift.o","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScanTests.build/swiftScanTests.swift.o","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScanPackageTests.product/Objects.LinkFileList"]
+    outputs: ["/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScanPackageTests.xctest/Contents/MacOS/swiftScanPackageTests"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/swiftScanPackageTests.xctest/Contents/MacOS/swiftScanPackageTests"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug","-o","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScanPackageTests.xctest/Contents/MacOS/swiftScanPackageTests","-module-name","swiftScanPackageTests","-Xlinker","-no_warn_duplicate_libraries","-Xlinker","-bundle","-Xlinker","-rpath","-Xlinker","@loader_path/../../../","@/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScanPackageTests.product/Objects.LinkFileList","-target","arm64-apple-macosx13.0","-Xlinker","-add_ast_path","-Xlinker","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/Modules/swiftScan.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/Modules/swiftScanPackageTests.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/Modules/swiftScanTests.swiftmodule","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "C.swiftScanTests-arm64-apple-macosx15.0-debug.module":
+    tool: shell
+    inputs: ["/Users/anjun/Documents/GitHub/swiftScan/Tests/swiftScanTests/swiftScanTests.swift","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/Modules/swiftScan.swiftmodule","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScanTests.build/sources"]
+    outputs: ["/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScanTests.build/swiftScanTests.swift.o","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/Modules/swiftScanTests.swiftmodule"]
+    description: "Compiling Swift Module 'swiftScanTests' (1 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","swiftScanTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/Modules/swiftScanTests.swiftmodule","-output-file-map","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScanTests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScanTests.build/sources","-I","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx13.0","-enable-batch-mode","-index-store-path","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j10","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-color-diagnostics","-swift-version","5","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-fPIC","-Xcc","-g","-package-name","swiftscan"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/anjun/Documents/GitHub/swiftScan/Sources/","/Users/anjun/Documents/GitHub/swiftScan/Tests/swiftScanTests/","/Users/anjun/Documents/GitHub/swiftScan/Package.swift","/Users/anjun/Documents/GitHub/swiftScan/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

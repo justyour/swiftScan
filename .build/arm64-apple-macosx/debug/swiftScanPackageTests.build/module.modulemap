@@ -1,0 +1,4 @@
+module swiftScanPackageTests {
+    header "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScanPackageTests.build/swiftScanPackageTests-Swift.h"
+    requires objc
+}

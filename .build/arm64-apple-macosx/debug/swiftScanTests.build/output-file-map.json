@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScanTests.build/master.swiftdeps"
+  },
+  "/Users/anjun/Documents/GitHub/swiftScan/Tests/swiftScanTests/swiftScanTests.swift": {
+    "dependencies": "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScanTests.build/swiftScanTests.d",
+    "object": "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScanTests.build/swiftScanTests.swift.o",
+    "swiftmodule": "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScanTests.build/swiftScanTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScanTests.build/swiftScanTests.swiftdeps"
+  }
+}

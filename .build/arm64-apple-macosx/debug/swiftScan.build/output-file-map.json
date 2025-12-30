@@ -1,0 +1,47 @@
+{
+  "": {
+    "swift-dependencies": "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/master.swiftdeps"
+  },
+  "/Users/anjun/Documents/GitHub/swiftScan/Sources/LBXPermissions.swift": {
+    "dependencies": "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXPermissions.d",
+    "object": "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXPermissions.swift.o",
+    "swiftmodule": "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXPermissions~partial.swiftmodule",
+    "swift-dependencies": "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXPermissions.swiftdeps"
+  },
+  "/Users/anjun/Documents/GitHub/swiftScan/Sources/LBXScanLineAnimation.swift": {
+    "dependencies": "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanLineAnimation.d",
+    "object": "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanLineAnimation.swift.o",
+    "swiftmodule": "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanLineAnimation~partial.swiftmodule",
+    "swift-dependencies": "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanLineAnimation.swiftdeps"
+  },
+  "/Users/anjun/Documents/GitHub/swiftScan/Sources/LBXScanNetAnimation.swift": {
+    "dependencies": "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanNetAnimation.d",
+    "object": "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanNetAnimation.swift.o",
+    "swiftmodule": "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanNetAnimation~partial.swiftmodule",
+    "swift-dependencies": "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanNetAnimation.swiftdeps"
+  },
+  "/Users/anjun/Documents/GitHub/swiftScan/Sources/LBXScanView.swift": {
+    "dependencies": "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanView.d",
+    "object": "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanView.swift.o",
+    "swiftmodule": "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanView~partial.swiftmodule",
+    "swift-dependencies": "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanView.swiftdeps"
+  },
+  "/Users/anjun/Documents/GitHub/swiftScan/Sources/LBXScanViewController.swift": {
+    "dependencies": "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanViewController.d",
+    "object": "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanViewController.swift.o",
+    "swiftmodule": "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanViewController~partial.swiftmodule",
+    "swift-dependencies": "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanViewController.swiftdeps"
+  },
+  "/Users/anjun/Documents/GitHub/swiftScan/Sources/LBXScanViewStyle.swift": {
+    "dependencies": "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanViewStyle.d",
+    "object": "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanViewStyle.swift.o",
+    "swiftmodule": "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanViewStyle~partial.swiftmodule",
+    "swift-dependencies": "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanViewStyle.swiftdeps"
+  },
+  "/Users/anjun/Documents/GitHub/swiftScan/Sources/LBXScanWrapper.swift": {
+    "dependencies": "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanWrapper.d",
+    "object": "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanWrapper.swift.o",
+    "swiftmodule": "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanWrapper~partial.swiftmodule",
+    "swift-dependencies": "/Users/anjun/Documents/GitHub/swiftScan/.build/arm64-apple-macosx/debug/swiftScan.build/LBXScanWrapper.swiftdeps"
+  }
+}
